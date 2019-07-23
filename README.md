@@ -12,6 +12,56 @@ The original package was no longer being maintained. There was an (excellent) pu
 
 Yes. While their are no guarantees, and not every scenario has been tested. It appears to works just fine.
 
+## How to use
+
+```
+constructor(props) {
+  super(props);
+  this.state = {
+    data: [
+      {
+        image:
+          'https://images.pexels.com/photos/459793/pexels-photo-459793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        key: '1',
+      },
+      {
+        image:
+          'https://images.pexels.com/photos/954585/pexels-photo-954585.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+        key: '2 noMove',
+      },
+    ],
+  };
+}
+
+
+...
+  <SortableGrid itemsPerRow={3}>
+    {this.state.data.map((item, index) => {
+      if (item.key.endsWith('noMove')) {
+        return (
+          <View
+            key={item.image}
+            inactive
+            fixed
+            onTap={() => console.log('Item number:', index, 'was tapped!')}
+          >
+            <PhotoTile image={item.image} />
+          </View>
+        );
+      }
+      return (
+        <View
+          key={item.image}
+          onTap={() => console.log('Item number:', index, 'was tapped!!!!')}
+        >
+          <PhotoTile image={item.image}/>
+        </View>
+      );
+    })}
+  </SortableGrid>
+...
+```
+
 <p align="center">
   <img alt="Issue Stats" src="http://i.giphy.com/gcB8YYVtL2BsA.gif">
 </p>
