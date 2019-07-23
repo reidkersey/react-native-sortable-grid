@@ -4,10 +4,12 @@
 
 ## What the fork!
 
-#Why
+# Why
+
 The original package was no longer being maintained. There was an (excellent) pull request by eduardojunio that enabled items to become fixed. So this code is forked from the orignal package with that pull request added.
 
-#Does it work?
+# Does it work?
+
 Yes. While their are no guarantees, and not every scenario has been tested. It appears to works just fine.
 
 <p align="center">
