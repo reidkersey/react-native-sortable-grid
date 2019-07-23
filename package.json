@@ -1,17 +1,17 @@
 {
-  "name": "react-native-sortable-grid",
+  "name": "react-native-sortable-grid-with-fixed",
   "keywords": [
     "drag-drop",
     "sortable",
     "grid"
   ],
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Drag-and-drop sortable grid view for React Native.",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ollija/react-native-sortable-grid.git"
+    "url": "git+https://github.com/reidkersey/react-native-sortable-grid.git"
   },
   "license": "MIT",
   "dependencies": {},
