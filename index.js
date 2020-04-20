@@ -296,7 +296,6 @@ class SortableGrid extends Component {
   };
 
   assessGridSize = ({ nativeEvent }) => {
-    console.log("Calculating grid size");
     if (
       this.props.itemWidth &&
       this.props.itemWidth < nativeEvent.layout.width
